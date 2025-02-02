@@ -1,0 +1,97 @@
+body {
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    font-family: 'Comic Sans MS', 'Cursive', sans-serif;  /* You may replace this with any cursive font or load one from Google Fonts */
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+
+h1 {
+    text-align: center;
+    color: #ff6347; /* A warm, tomato color */
+    margin-bottom: 20px;
+    font-family: 'Cursive';
+}
+
+.section-title {
+    font-family: 'Cursive';
+    font-size: 1.5em;
+    color: #6a1b9a; /* A nice purple for titles */
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* General content styling (paragraphs, list items) */
+p, ul, li {
+    font-family: 'Cursive';
+    color: #4a148c; /* A different, complementary color for content text */
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Remove default list styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Styling for Bible verses */
+.bible-verse {
+    font-size: 0.9em;
+    font-style: italic;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Image styling for any images on the page */
+img {
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the video container */
+.video-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Uncomment one of the following approaches for the video */
+
+    /* Option 1: Rotate video 90 degrees */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.video-container video {
+    /* Option 1: Rotate video
+    transform: rotate(90deg);
+    width: auto;
+    height: 100%;
+    max-height: 500px; */
+
+    /* Option 2: Constrain video dimensions without rotating */
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
